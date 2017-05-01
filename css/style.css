@@ -139,9 +139,9 @@ html, body {
   position: relative;
   font-family: 'Dosis', sans-serif;
   float: right;
-  transform: translateY(50%);
+  transform: translateY(-110%);
   margin-right: 10px;
-  text-align: center; }
+  text-align: right; }
   .add_item img {
     /*height: 30px;
     width: 30px;*/ }
@@ -152,6 +152,76 @@ html, body {
     margin: 0; }
   .add_item h5 {
     margin: 0; }
+
+select {
+  position: relative;
+  border: solid black 1px;
+  transform: translateX(-15px); }
+
+/*start of splash page*/
+.btn_position {
+  height: 80%;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center; }
+
+.btn, .btn-success {
+  position: relative;
+  top: 80%;
+  background-color: transparent;
+  color: black;
+  height: 100px;
+  width: 200px;
+  font-size: 3em;
+  font-family: 'Dosis', sans-serif; }
+
+/*Start of order page*/
+#order_sections {
+  background-color: white;
+  height: 90%; }
+
+.order_box {
+  position: relative;
+  margin: 0 auto;
+  border: 1px dotted black;
+  height: 70%;
+  width: 100%;
+  /*margin-top: 10%;*/ }
+
+.order_content {
+  font-family: 'Dosis', sans-serif; }
+  .order_content h1 {
+    padding-left: 10px; }
+  .order_content hr {
+    color: black;
+    margin-top: 10px;
+    border-top: 1px solid black;
+    width: 90%;
+    margin-left: 10px; }
+
+.added_order {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  border: black dotted 1px;
+  height: 100px; }
+  .added_order h3 {
+    padding-left: 10px; }
+  .added_order h4 {
+    display: inline-block; }
+
+.send_order {
+  height: 30%;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white; }
+  .send_order button {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    font-size: 1em;
+    background-color: #e74c3c; }
 
 @media screen and (min-width: 376px) and (max-width: 599px) {
   .column {
