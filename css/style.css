@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.center {
+  text-align: center; }
+
+html, body {
+  height: 100vh;
+  max-height: 100vh;
+  width: 100vw;
+  max-width: 100vw; }
+
+#nav {
+  background-color: #f5c013;
+  height: 10%; }
+
+.logo img {
+  width: 50%;
+  padding-top: 1%; }
+
+#sections {
+  background-color: white;
+  height: 90%; }
+
+.row h2 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 4em;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+  font-weight: normal;
+  margin: 0px; }
+
+.row {
+  display: block;
+  height: 25%; }
+
+.row-1 {
+  height: 25%; }
+
+.row-2 {
+  height: 25%; }
+
+.row-3 {
+  height: 25%; }
+
+.row-4 {
+  height: 25%; }
+
+.row:before {
+  display: table;
+  content: " ";
+  clear: both; }
+
+.row:after {
+  display: table;
+  content: " ";
+  clear: both; }
+
+/*Four different sections*/
+.column {
+  height: 100%;
+  width: 100%;
+  float: left; }
+
+.breads {
+  background-color: white;
+  height: 100%;
+  border-bottom: black solid 1px; }
+
+.breads h2 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.sweets {
+  background-color: white;
+  border-bottom: black solid 1px; }
+
+.sweets a {
+  text-decoration: none;
+  color: black; }
+
+.coffee {
+  background-color: white;
+  border-bottom: black solid 1px; }
+
+.cabinet {
+  background-color: white; }
+
+/*start of sweets page css*/
+.sweets_header a {
+  text-decoration: none;
+  color: white; }
+
+.sweets_header h1 {
+  font-family: 'Exo', sans-serif;
+  text-decoration: none;
+  margin: 0px;
+  color: white;
+  position: relative;
+  transform: translateY(50%);
+  display: inline-block; }
+
+.sweets_header img {
+  height: 30px;
+  width: 30px;
+  display: inline-block; }
+
+.items {
+  height: 35%; }
+
+.item_block_1 {
+  width: 100%;
+  float: left;
+  background-color: white;
+  border-bottom: black solid 1px; }
+
+.sweets_item1 {
+  /*background-color: white;
+  	height: 100%;
+  	border-bottom: black solid 1px;*/ }
+
+.food_photo {
+  position: relative;
+  font-family: 'Dosis', sans-serif; }
+  .food_photo img {
+    position: relative;
+    padding-top: 8%;
+    max-width: 35%;
+    padding-left: 5%; }
+  .food_photo h3 {
+    padding-left: 5%; }
+
+.add_item {
+  position: relative;
+  font-family: 'Dosis', sans-serif;
+  float: right;
+  transform: translateY(50%);
+  margin-right: 10px;
+  text-align: center; }
+  .add_item img {
+    /*height: 30px;
+    width: 30px;*/ }
+  .add_item h3 {
+    margin: 0;
+    padding: 0; }
+  .add_item h4 {
+    margin: 0; }
+  .add_item h5 {
+    margin: 0; }
+
+@media screen and (min-width: 376px) and (max-width: 599px) {
+  .column {
+    height: 100%;
+    width: 100%;
+    /*float: left;*/ } }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .column {
+    height: 100%;
+    width: 100%;
+    float: left; }
+
+  #nav img {
+    width: 40%; }
+
+  .sweets_header {
+    width: 30px;
+    height: 30px; } }
+@media screen and (min-width: 1024px) {
+  #nav img {
+    width: 20%; } }
