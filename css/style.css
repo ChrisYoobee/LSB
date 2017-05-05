@@ -6,31 +6,49 @@
   height: 100px;
   float: left;
   text-align: center;
+  color: white;
+  /*display: none;*/ }
+
+.box2 {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 20;
+  display: none; }
+
+	/*#show{
+
+		width: 60px;
+		height: 60px;
+		background-color: green;
+	}*/
+#close {
+  width: 60px;
+  height: 60px;
+  background-color: blue;
   color: white; }
+
+#add_item {
+  width: 100px;
+  height: 60px;
+  background-color: red;
+  text-align: center; }
 
 .row:after {
   content: "";
   clear: both;
   display: table; }
 
-.redBox {
-  background-color: red; }
-
-.greenBox {
-  background-color: green; }
-
-.blueBox {
-  background-color: blue; }
-
-.greyBox {
-  background-color: grey; }
-
-.Add {
-  color: #fff;
-  background-color: #286090;
+.Add-btn {
+  color: #286090;
+  /*background-color: #286090;*/
   border-color: #204d74;
   width: 50px;
-  height: 50px; }
+  height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: #286090 3px solid; }
 
 .Remove {
   color: #fff;
@@ -50,6 +68,7 @@
   background-position: center bottom;
   border-bottom: black solid 1px;
   border-top: solid white 1px;
+  /*background: linear-gradient rgba(0,0,0,0.5) , rgba(0,0,0,0.5), url(../assets/cookie.png);*/
   /*:after{
   content: "";
     background-image: url(../assets/cookie.jpg);
@@ -387,7 +406,14 @@ select {
   .column {
     height: 100%;
     width: 100%;
-    /*float: left;*/ } }
+    /*float: left;*/ }
+
+  .items {
+    width: 50%; }
+
+  .row-2 {
+    width: 50%; } }
+/*Tablet*/
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .column {
     height: 100%;
@@ -399,9 +425,13 @@ select {
 
   .sweets_header {
     width: 30px;
-    height: 30px; } }
+    height: 30px; }
+
+  .items {
+    width: 50%; }
+
+  .row-2 {
+    width: 50%; } }
 @media screen and (min-width: 1024px) {
   #nav img {
     width: 20%; } }
-
-/*# sourceMappingURL=style.css.map */

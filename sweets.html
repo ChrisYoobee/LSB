@@ -25,7 +25,29 @@
 	</div>		
 </div>
 
+<div class="box2">
+	<div class="box redBox">
+			<p>Cookies</p>
+			<button class="Add">+</button>
+			<button class="Remove">-</button>
+	</div>
+
+	<hr>
+	<button id="Clear">Clear Cart</button>
+	<p>Cart Count (<span class="cartCount"></span>)</p>
+	<ul id="Cart">
+
+	</ul>
+	<hr>
+	<a href="order.html">Go to Cart</a>
+	<a href="order.html"><div id="hide"></div></a>
+	<dir id="add_item"></dir>
+
+</div>
+
 <div id="sections">
+	<div id="show"></div>
+
 
 	<div class="items item_block_1">
 		<div class="column sweets_item1">
@@ -33,8 +55,9 @@
 				<img src="https://uc.uxpin.com/files/628104/622621/carrot_cake.jpg">
 				<h3>Carrot Cake</h3>
 			</div>	
+
 			<div class="add_item">
-				<a href="order.html"> <img src="assets/add.png"> </a>
+				<!-- <a href="order.html"> --> <img src="assets/add.png"> 
 				<h4>quantity</h4>
 				<select name="chooseVaule">
 					<option value="1" selected>1</option>
@@ -52,52 +75,15 @@
 		<div class="items row-2 center">
 			<div class="column sweets">
 				<h2><a href="position.html">Chocolate Chip Cookie</a></h2>
-					<h5>'</h5>
-					<h5>'</h5>
-					<h1>+</h1>
-				
-			</div>
-
-		
-			 	
-	</div>
-			<div class="items">
-		<div class="column sweets">
-			
-		</div>
-				
-	</div>
-		
-	
+				<h5>'</h5>
+				<h5>'</h5>
+				<h1>+</h1>
+			 </div>
+	     </div>
 	<div class="items">
 		<div class="column coffee">
-
-		</div>
-				
-	</div>
-	<div class="items">
-		<div class="column cabinet">
-			<div class="row">
-		<div class="box redBox">
-			<p>Cookies</p>
-			<button class="Add">+</button>
-			<button class="Remove">-</button>
-		</div>
+			
 	
-
-
-		</div>
-	</div>
-
-	<hr>
-	<button id="Clear">Clear Cart</button>
-	<p>What is in my cart</p>
-	<p>Cart Count (<span class="cartCount"></span>)</p>
-	<ul id="Cart">
-
-	</ul>
-	<hr>
-	<a href="order.html">Go to Cart</a>
 		</div>
 	</div>
 </div>
@@ -109,5 +95,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/CartFunction.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

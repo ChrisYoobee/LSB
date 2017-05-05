@@ -16,6 +16,7 @@
 
 
 <body>
+
 <div id="nav">
 	<div class="sweets_header center">
 		<div class="back">
@@ -25,36 +26,38 @@
 	</div>		
 </div>
 
+
+<!-- Adding quantity (is hidden until item is clicked) -->
+<div class="box2">
+	<div class="box redBox">
+			<p>Cookies</p>
+			<button class="Add Add-btn">+</button>
+			<button class="Remove">-</button>
+	</div>
+
+	<hr>
+	<button id="Clear" class="Add-btn">Clear Cart</button>
+	<p>Cart Count (<span class="cartCount"></span>)</p>
+	<ul id="Cart">
+
+	</ul>
+	<hr>
+	<a href="order.html">Go to Cart</a>
+	<div id="close">close</div></a>
+	<a href="order.html"><div id="add_item" class="btn" >Add Item To Order</div></a>
+
+</div>
+
 <div id="sections">
-
-	<!-- <div class="items item_block_1">
-		<div class="column sweets_item1">
-			<div class="food_photo">
-				<img src="https://uc.uxpin.com/files/628104/622621/carrot_cake.jpg">
-				<h3>Carrot Cake</h3>
-			</div>	
-			<div class="add_item">
-				<a href="order.html"> <img src="assets/add.png"> </a>
-				<h4>quantity</h4>
-				<select name="chooseVaule">
-					<option value="1" selected>1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-				</select>
-				<h3>$3.50</h3>
-			</div>
-
-
-		</div>
-	</div> -->
 
 	<div class="items row-2 center">
 		<div class="column cookie">
+		
 			<div class="content1">
-				<h3><a href="position.html">Chocolate Chip Cookie</a></h3>
+				<h3 class="product-title"><a href="order.html">Chocolate Chip Cookie</a></h3>
 				<h4>Our delicious classic Chocolate Chip Cookie recipe</h4>
-				<h1>+</h1>
+				<h1 class="Add Add-btn" id="show">+</h1> 
+			
 			</div>
 			<div class="content-container">
 
@@ -65,9 +68,9 @@
 	<div class="items row-2 center">
 		<div class="column carrotcake">
 			<div class="content1">
-				<h3><a href="position.html">Carrot Cake</a></h3>
+				<h3 class="product-title"><a href="position.html">Carrot Cake</a></h3>
 				<h4>Our delicious classic Carrot Cake recipe</h4>
-				<h1>+</h1>
+				<h1 class="Add Add-btn">+</h1>
 			</div>
 			<div class="content-container">
 
@@ -78,15 +81,12 @@
 	<div class="items row-2 center">
 		<div class="column brownie">
 			<div class="content1">
-				<h3><a href="position.html">Brownie</a></h3>
+				<h3 class="product-title"><a href="position.html">Brownie</a></h3>
 				<h4>Chocolate Brownie with powedered sugar</h4>
-				<h1>+</h1>
+				<h1 class="Add Add-btn">+</h1>
 			</div>
 			<div class="content-container">
-				<div class="box redBox">
-			<button class="Add">+</button>
-			<button class="Remove">-</button>
-		</div>
+			
 			</div>		
 		</div>
 	</div>
@@ -117,5 +117,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/CartFunction.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

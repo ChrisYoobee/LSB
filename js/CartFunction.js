@@ -14,14 +14,14 @@ $(document).ready(function(){
 			cart.push(item);
 		}
 	}
-
+	console.log(cart);
 	CartCount();
 	//Adding new Items into your Cart
 	//It will check to see if there is already something in your cart.
 	//If there isn't then it will create a new entry
 	//If there is it will add the new quantity
 	$(".Add").click(function(){
-		var value = $(this).parent().find('p').text();
+		var value = $(this).parent().find('.product-title').text();
 		var quantity = 1;
 		var CartItemFound = false;
 
@@ -59,6 +59,7 @@ $(document).ready(function(){
 			$("#Cart").append("<li class='"+ ClassName + "'>"+ value + " - " + quantity +"</li>");			
 		}
 		CartCount();
+		console.log(cart);
 	});
 
 	//When removing a item quantity from cart
