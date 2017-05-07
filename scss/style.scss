@@ -3,15 +3,15 @@ $h-section: 25%;
 $primary-color: #f5c013;
 $amatic-font: 'Amatic SC', cursive;
 $dosis-font: 'Dosis', sans-serif;
+$screen: 100%;
 
 /* SASS Mixins*/
-@mixin screen-wh ($screen) {
+@mixin screen-wh {
   	 height: $screen;
      width: $screen;
-     
-}
+    
+ }
 
-/*For testing*/
 
 
 *{
@@ -36,6 +36,12 @@ html,body{
 #nav{
 	background-color: $primary-color;
 	height: 10%;
+
+	p{
+		/*float: right;*/
+		margin-right: 5px;
+		text-align: right;
+	}
 }
 
 .logo {
@@ -144,7 +150,7 @@ html,body{
 
 /*Menu Page*/
 .column{ 
-	@include screen-wh(100%);
+	@include screen-wh;
 	float: left;
 }
 
@@ -568,6 +574,31 @@ select{
 
 /*Start of order page*/
 
+#comfirmation{
+
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	z-index: 1000;
+	text-align: center;
+
+	/*display: none;*/
+
+	.btn{
+		position: relative;
+		width: 80px;
+		height: 50px;
+		border: solid black 1px;
+	
+		margin-top: 50%;
+		
+
+	}
+
+}
+
+
+
 #order_sections{
 	background-color: white;
 	height: 80%;
@@ -622,11 +653,11 @@ font-family: 'Dosis', sans-serif;
 .added_order{
 	display: inline-block;
 	float: left;
-	width: 70%;
+	width: 95%;
 	height: 100px;
 
 	ul{
-		font-family: #dosis-font;
+		/*font-family: #dosis-font;*/
 		font-size: 1.5em;
 		float: left;
 		padding-left: 10px; 
@@ -680,6 +711,7 @@ font-family: 'Dosis', sans-serif;
 	text-align: center;
 	background-color: white;
 	position: fixed;
+	z-index: -1;
 
 
 

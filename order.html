@@ -17,9 +17,18 @@
 
 
 <body>
+<div id="comfirmation">
+<h2>Are you sure you want to send order?</h2>
+	<div class="btn">No</div>
+	<div class="btn">Yes</div>
+	
+</div>
+
+
 <div id="nav">
 	<div class="logo center">
 		<img src="https://uc.uxpin.com/files/628104/622621/logo-24.png" alt="the logo">
+		<p> (<span class="cartCount"></span>)</p> 
 	</div>		
 </div>
 
@@ -34,11 +43,10 @@
 				<h3>1 x Carrot Cake</h3> -->
 				<ul id="Cart">
 				</ul>
-				<h3>Total: $4.00</h3>
+				<h3>Total: $<span class="PriceCount"></span></h3>
 			</div>
 			<div class="order_price">
-				<h4>$1.50</h4>
-				<h4>$2.50</h4>
+				
 
 			</div>
 
@@ -60,7 +68,7 @@
 	<button id="Clear">Clear Cart</button>
 
 	<div class="send_order">
-		<a href="menu.html"> <button type="button" class="btn btn-success">SEND ORDER</button> </a>
+		 <button type="button" class="btn btn-success show">SEND ORDER</button>
 	</div>
 	
 

@@ -1,6 +1,5 @@
 /* SASS Variables */
 /* SASS Mixins*/
-/*For testing*/
 * {
   padding: 0;
   margin: 0;
@@ -18,6 +17,10 @@ html, body {
 #nav {
   background-color: #f5c013;
   height: 10%; }
+  #nav p {
+    /*float: right;*/
+    margin-right: 5px;
+    text-align: right; }
 
 .logo img {
   width: 30vh;
@@ -402,6 +405,20 @@ select {
   transform: translateX(-15px); }
 
 /*Start of order page*/
+#comfirmation {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  text-align: center;
+  /*display: none;*/ }
+  #comfirmation .btn {
+    position: relative;
+    width: 80px;
+    height: 50px;
+    border: solid black 1px;
+    margin-top: 50%; }
+
 #order_sections {
   background-color: white;
   height: 80%; }
@@ -437,7 +454,7 @@ select {
 .added_order {
   display: inline-block;
   float: left;
-  width: 70%;
+  width: 95%;
   height: 100px;
   		/*h4{
   
@@ -445,7 +462,7 @@ select {
   			float: right;
   		}*/ }
   .added_order ul {
-    font-family: #dosis-font;
+    /*font-family: #dosis-font;*/
     font-size: 1.5em;
     float: left;
     padding-left: 10px;
@@ -476,7 +493,8 @@ select {
   bottom: 40px;
   text-align: center;
   background-color: white;
-  position: fixed; }
+  position: fixed;
+  z-index: -1; }
   .send_order button {
     position: relative;
     width: 100%;
@@ -575,5 +593,3 @@ select {
 
   .carrotcake {
     border: solid white 1px; } }
-
-/*# sourceMappingURL=style.css.map */

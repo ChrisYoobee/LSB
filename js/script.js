@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 
 // Adds order and goes to quantity screen
-$('#show').click(function(){
+$('.show').click(function(){
 		$('.box2').show(1000);
 
 	});
@@ -15,15 +15,17 @@ $('#close').click(function(){
 
 	});
 // Hides the page eg. list of sweets items page
-$('#show').click(function(){
-		$('#sections').hide();
+$('.show').click(function(){
+		$('#comfirmation').hide();
 
 	});
 
 // shows items page again
 $('#close').click(function(){
-$('#sections').show();
+$('#comfirmation').show();
 	});
+
+
 
 
 
