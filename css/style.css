@@ -1,139 +1,6 @@
 /* SASS Variables */
 /* SASS Mixins*/
 /*For testing*/
-.box {
-  width: 100px;
-  height: 100px;
-  float: left;
-  text-align: center;
-  color: white;
-  /*display: none;*/ }
-
-.box2 {
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  z-index: 20;
-  display: none; }
-
-	/*#show{
-
-		width: 60px;
-		height: 60px;
-		background-color: green;
-	}*/
-#close {
-  width: 60px;
-  height: 60px;
-  background-color: blue;
-  color: white; }
-
-#add_item {
-  width: 100px;
-  height: 60px;
-  background-color: red;
-  text-align: center; }
-
-.row:after {
-  content: "";
-  clear: both;
-  display: table; }
-
-.Add-btn {
-  color: #286090;
-  /*background-color: #286090;*/
-  border-color: #204d74;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  margin: 0 auto;
-  border-radius: 10px;
-  border: #286090 3px solid; }
-
-.Remove {
-  color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
-  width: 50px;
-  height: 50px; }
-
-.cookie {
-  background-color: white;
-  height: 100%;
-  display: block;
-  position: relative;
-  background-image: url(../assets/cookie.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
-  border-bottom: black solid 1px;
-  border-top: solid white 1px;
-  /*background: linear-gradient rgba(0,0,0,0.5) , rgba(0,0,0,0.5), url(../assets/cookie.png);*/
-  /*:after{
-  content: "";
-    background-image: url(../assets/cookie.jpg);
-    opacity: 0.5;
-    position: absolute;
-    z-index: -1; 
-  }*/ }
-
-/*.content-container{
-	position: relative;
-	width: 90%;
-	height: 90%;
-	background-color: white;
-	margin: 0 auto;
-	top: 5%;
-	opacity: 0.5;
-}*/
-.carrotcake {
-  background-color: white;
-  height: 100%;
-  display: block;
-  position: relative;
-  background-image: url(../assets/carrotcake.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
-  border-bottom: black solid 1px; }
-
-.brownie {
-  background-color: white;
-  height: 100%;
-  display: block;
-  position: relative;
-  background-image: url(../assets/brownie.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
-  border-bottom: black solid 1px; }
-
-.content1 {
-  position: relative;
-  top: 4.7em;
-  margin: 0 auto;
-  /*float: right;*/
-  color: black;
-  transform: translateY(-30%);
-  /*a{
-  	font-size: 4rem;
-  	margin-top: 30px;
-  	color: black;
-  }*/ }
-  .content1 h3 {
-    font-size: 4rem;
-    margin-top: 30px;
-    color: black;
-    position: relative;
-    z-index: 2;
-    font-family: 'Amatic SC', cursive;
-    position: relative;
-    top: 50%;
-    text-decoration: none;
-    font-weight: normal; }
-  .content1 h4 {
-    font-family: 'Dosis', sans-serif; }
-
 * {
   padding: 0;
   margin: 0;
@@ -156,6 +23,33 @@ html, body {
   width: 30vh;
   padding-top: 1%; }
 
+/*start of splash page*/
+#background {
+  width: 100%;
+  height: 90%;
+  background-image: url(../assets/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  position: absolute; }
+
+.btn_position {
+  height: 80%;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center; }
+
+.btn-success {
+  position: relative;
+  top: 80%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  height: 100px;
+  width: 200px;
+  font-size: 3em;
+  font-family: 'Dosis', sans-serif; }
+
+/*framework*/
 #sections {
   background-color: white;
   height: 90%; }
@@ -235,6 +129,181 @@ html, body {
   background-color: white; }
 
 /*start of sweets page css*/
+/*#Cart{
+text-align: left;
+}*/
+.Add {
+  display: inline-block;
+  /*float: left;*/ }
+
+.Remove {
+  display: inline-block;
+  float: left; }
+
+.box {
+  width: 100%;
+  height: 50%;
+  float: left;
+  text-align: center;
+  color: white;
+  position: relative;
+  /*display: none;*/ }
+
+.box2 {
+  width: 100%;
+  height: 90%;
+  background-color: white;
+  float: left;
+  z-index: 20;
+  text-align: center;
+  display: none; }
+
+.center_container {
+  width: 100%;
+  height: 70%;
+  margin: 0 auto;
+  margin-top: 30%;
+  /*border: dotted black 1px;*/
+  position: relative; }
+
+	/*#show{
+
+		width: 60px;
+		height: 60px;
+		background-color: green;
+	}*/
+#close {
+  width: 30px;
+  height: 30px;
+  /*background-color: blue;*/
+  color: black;
+  float: right;
+  border: 1px solid black;
+  /*border-radius: 20px;*/
+  margin-top: 20px;
+  margin-right: 20px; }
+
+#add_item {
+  width: 100px;
+  height: 60px;
+  background-color: red;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  display: inline;
+  color: white; }
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.Add-btn {
+  color: #286090;
+  /*background-color: #286090;*/
+  border-color: #204d74;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: #286090 3px solid;
+  margin-top: 20px; }
+
+.Minus-btn {
+  color: #286090;
+  /*background-color: #286090;*/
+  border-color: #204d74;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: #286090 3px solid;
+  margin-left: 20%;
+  margin-top: 20px; }
+
+.Remove {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+  width: 50px;
+  height: 50px; }
+
+.cookie {
+  background-color: white;
+  height: 100%;
+  display: block;
+  position: relative;
+  background-image: url(../assets/cookie.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  border-bottom: black solid 1px;
+  border-top: solid white 1px;
+  /*background: linear-gradient rgba(0,0,0,0.5) , rgba(0,0,0,0.5), url(../assets/cookie.png);*/
+  /*:after{
+  content: "";
+    background-image: url(../assets/cookie.jpg);
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1; 
+  }*/ }
+
+/*.content-container{
+	position: relative;
+	width: 90%;
+	height: 90%;
+	background-color: white;
+	margin: 0 auto;
+	top: 5%;
+	opacity: 0.5;
+}*/
+.carrotcake {
+  background-color: white;
+  height: 100%;
+  display: block;
+  position: relative;
+  background-image: url(../assets/carrotcake.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  border-bottom: black solid 1px; }
+
+.brownie {
+  background-color: white;
+  height: 100%;
+  display: block;
+  position: relative;
+  background-image: url(../assets/brownie.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  border-bottom: black solid 1px; }
+
+.content1 {
+  position: relative;
+  top: 4.7em;
+  margin: 0 auto;
+  /*float: right;*/
+  color: black;
+  transform: translateY(-30%); }
+  .content1 h1 img {
+    height: 20px;
+    width: 20px; }
+  .content1 h3 {
+    font-size: 4rem;
+    margin-top: 30px;
+    color: black;
+    position: relative;
+    z-index: 2;
+    font-family: 'Amatic SC', cursive;
+    position: relative;
+    top: 50%;
+    text-decoration: none;
+    font-weight: normal; }
+  .content1 h4 {
+    font-family: 'Dosis', sans-serif; }
+
 .sweets_header a {
   text-decoration: none;
   color: white; }
@@ -278,11 +347,6 @@ html, body {
   background-color: white;
   border-bottom: black solid 1px; }
 
-.sweets_item1 {
-  /*background-color: white;
-  	height: 100%;
-  	border-bottom: black solid 1px;*/ }
-
 .food_photo {
   position: relative;
   font-family: 'Dosis', sans-serif; }
@@ -317,41 +381,32 @@ select {
   border: solid black 1px;
   transform: translateX(-15px); }
 
-/*start of splash page*/
-.btn_position {
-  height: 80%;
-  width: 200px;
-  margin: 0 auto;
-  text-align: center; }
-
-.btn-success {
-  position: relative;
-  top: 80%;
-  background-color: transparent;
-  color: black;
-  height: 100px;
-  width: 200px;
-  font-size: 3em;
-  font-family: 'Dosis', sans-serif; }
-
 /*Start of order page*/
 #order_sections {
   background-color: white;
-  height: 86%; }
+  height: 80%; }
 
 .order_box {
   position: relative;
   margin: 0 auto;
-  border: 1px dotted black;
+  /*border: 1px dotted black;*/
   height: 70%;
   width: 100%;
   /*margin-top: 10%;*/ }
+  .order_box .btn {
+    margin-top: 50%; }
+
+.btn-primary {
+  float: right;
+  bottom: 0;
+  margin-right: 20px; }
 
 .order_content {
   font-family: 'Dosis', sans-serif;
   /*float: left;*/ }
   .order_content h1 {
-    padding-left: 10px; }
+    padding-left: 10px;
+    position: relative; }
   .order_content hr {
     color: black;
     margin-top: 10px;
@@ -363,16 +418,24 @@ select {
   display: inline-block;
   float: left;
   width: 70%;
-  /*border: black dotted 1px;*/
   height: 100px;
   		/*h4{
   
   			display: inline-block;
   			float: right;
   		}*/ }
-  .added_order h3 {
+  .added_order ul {
+    font-family: #dosis-font;
+    font-size: 1.5em;
+    float: left;
     padding-left: 10px;
-    margin: 0; }
+    text-align: left; }
+  .added_order h3 {
+    /*float: left;*/
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+    font-size: 2em; }
 
 .order_price {
   width: 30%;
@@ -387,20 +450,42 @@ select {
     float: right; }
 
 .send_order {
-  height: 23%;
+  height: 10vh;
   width: 100%;
   margin: 0 auto;
+  bottom: 40px;
   text-align: center;
-  background-color: white; }
+  background-color: white;
+  position: fixed; }
   .send_order button {
     position: relative;
     width: 100%;
     height: 60px;
     font-size: 1em;
-    background-color: #e74c3c; }
+    background-color: #e74c3c;
+    font-size: 2em; }
 
-.btn-primary {
-  float: right; }
+#Clear {
+  position: relative;
+  color: black;
+  background-color: white;
+  border-color: #204d74;
+  width: 20%;
+  height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: #286090 3px solid;
+  /*margin-top: 20px;*/
+  font-family: "Dosis", sans-serif;
+  float: left;
+  margin-left: 10px; }
+
+#Clear:active {
+  /*content: "";*/
+  background: black;
+  opacity: 0;
+  transition: all 0.8s; }
 
 @media screen and (min-width: 376px) and (max-width: 599px) {
   .column {
@@ -413,7 +498,7 @@ select {
 
   .row-2 {
     width: 50%; } }
-/*Tablet*/
+/*Tablet portrait*/
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .column {
     height: 100%;
@@ -428,10 +513,10 @@ select {
     height: 30px; }
 
   .items {
-    width: 50%; }
-
-  .row-2 {
     width: 50%; } }
+/*Tablet Landscape*/
 @media screen and (min-width: 1024px) {
   #nav img {
     width: 20%; } }
+
+/*# sourceMappingURL=style.css.map */

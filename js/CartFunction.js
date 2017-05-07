@@ -62,7 +62,7 @@ $(document).ready(function(){
 		console.log(cart);
 	});
 
-	//When removing a item quantity from cart
+	//When removing an item quantity from cart
 	$(".Remove").click(function(){
 		var value = $(this).parent().find('p').text();
 		var quantity = 1;

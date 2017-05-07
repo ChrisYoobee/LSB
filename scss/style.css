@@ -1,3 +1,139 @@
+/* SASS Variables */
+/* SASS Mixins*/
+/*For testing*/
+.box {
+  width: 100px;
+  height: 100px;
+  float: left;
+  text-align: center;
+  color: white;
+  /*display: none;*/ }
+
+.box2 {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 20;
+  display: none; }
+
+	/*#show{
+
+		width: 60px;
+		height: 60px;
+		background-color: green;
+	}*/
+#close {
+  width: 60px;
+  height: 60px;
+  background-color: blue;
+  color: white; }
+
+#add_item {
+  width: 100px;
+  height: 60px;
+  background-color: red;
+  text-align: center; }
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.Add-btn {
+  color: #286090;
+  /*background-color: #286090;*/
+  border-color: #204d74;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: #286090 3px solid; }
+
+.Remove {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+  width: 50px;
+  height: 50px; }
+
+.cookie {
+  background-color: white;
+  height: 100%;
+  display: block;
+  position: relative;
+  background-image: url(../assets/cookie.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  border-bottom: black solid 1px;
+  border-top: solid white 1px;
+  /*background: linear-gradient rgba(0,0,0,0.5) , rgba(0,0,0,0.5), url(../assets/cookie.png);*/
+  /*:after{
+  content: "";
+    background-image: url(../assets/cookie.jpg);
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1; 
+  }*/ }
+
+/*.content-container{
+	position: relative;
+	width: 90%;
+	height: 90%;
+	background-color: white;
+	margin: 0 auto;
+	top: 5%;
+	opacity: 0.5;
+}*/
+.carrotcake {
+  background-color: white;
+  height: 100%;
+  display: block;
+  position: relative;
+  background-image: url(../assets/carrotcake.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  border-bottom: black solid 1px; }
+
+.brownie {
+  background-color: white;
+  height: 100%;
+  display: block;
+  position: relative;
+  background-image: url(../assets/brownie.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  border-bottom: black solid 1px; }
+
+.content1 {
+  position: relative;
+  top: 4.7em;
+  margin: 0 auto;
+  /*float: right;*/
+  color: black;
+  transform: translateY(-30%);
+  /*a{
+  	font-size: 4rem;
+  	margin-top: 30px;
+  	color: black;
+  }*/ }
+  .content1 h3 {
+    font-size: 4rem;
+    margin-top: 30px;
+    color: black;
+    position: relative;
+    z-index: 2;
+    font-family: 'Amatic SC', cursive;
+    position: relative;
+    top: 50%;
+    text-decoration: none;
+    font-weight: normal; }
+  .content1 h4 {
+    font-family: 'Dosis', sans-serif; }
+
 * {
   padding: 0;
   margin: 0;
@@ -17,12 +153,14 @@ html, body {
   height: 10%; }
 
 .logo img {
-  width: 50%;
+  width: 30vh;
   padding-top: 1%; }
 
 #sections {
   background-color: white;
   height: 90%; }
+  #sections a {
+    color: black; }
 
 .row h2 {
   font-family: 'Amatic SC', cursive;
@@ -60,7 +198,7 @@ html, body {
   content: " ";
   clear: both; }
 
-/*Four different sections*/
+/*Menu Page*/
 .column {
   height: 100%;
   width: 100%;
@@ -70,6 +208,8 @@ html, body {
   background-color: white;
   height: 100%;
   border-bottom: black solid 1px; }
+  .breads h3 {
+    color: white; }
 
 .breads h2 {
   position: relative;
@@ -78,11 +218,14 @@ html, body {
 
 .sweets {
   background-color: white;
-  border-bottom: black solid 1px; }
-
-.sweets a {
-  text-decoration: none;
-  color: black; }
+  border-bottom: black solid 1px;
+  display: inline-block; }
+  .sweets a {
+    text-decoration: none;
+    color: black; }
+  .sweets h1 {
+    position: relative;
+    display: inline-block; }
 
 .coffee {
   background-color: white;
@@ -263,7 +406,14 @@ select {
   .column {
     height: 100%;
     width: 100%;
-    /*float: left;*/ } }
+    /*float: left;*/ }
+
+  .items {
+    width: 50%; }
+
+  .row-2 {
+    width: 50%; } }
+/*Tablet*/
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .column {
     height: 100%;
@@ -275,7 +425,13 @@ select {
 
   .sweets_header {
     width: 30px;
-    height: 30px; } }
+    height: 30px; }
+
+  .items {
+    width: 50%; }
+
+  .row-2 {
+    width: 50%; } }
 @media screen and (min-width: 1024px) {
   #nav img {
     width: 20%; } }
