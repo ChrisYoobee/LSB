@@ -6,23 +6,23 @@ $(document).ready(function(){
 
 // Adds order and goes to quantity screen
 $('.show').click(function(){
-		$('.box2').show(1000);
+		$('.comfirmation').show(200);
 
 	});
 // Closes quantity screen
-$('#close').click(function(){
-		$('.box2').hide();
+$('.close').click(function(){
+		$('.comfirmation').hide();
 
 	});
 // Hides the page eg. list of sweets items page
 $('.show').click(function(){
-		$('#comfirmation').hide();
+		$('#order_sections').hide();
 
 	});
 
 // shows items page again
-$('#close').click(function(){
-$('#comfirmation').show();
+$('.close').click(function(){
+$('#order_sections').show();
 	});
 
 

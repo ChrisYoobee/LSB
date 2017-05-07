@@ -188,7 +188,7 @@ text-align: left;
 		height: 60px;
 		background-color: green;
 	}*/
-#close {
+.close {
   width: 30px;
   height: 30px;
   /*background-color: blue;*/
@@ -405,14 +405,14 @@ select {
   transform: translateX(-15px); }
 
 /*Start of order page*/
-#comfirmation {
+.comfirmation {
   height: 100%;
   width: 100%;
   background-color: white;
   z-index: 1000;
   text-align: center;
-  /*display: none;*/ }
-  #comfirmation .btn {
+  display: none; }
+  .comfirmation .btn {
     position: relative;
     width: 80px;
     height: 50px;
@@ -502,6 +502,18 @@ select {
     font-size: 1em;
     background-color: #e74c3c;
     font-size: 2em; }
+
+.show {
+  height: 10vh;
+  width: 100%;
+  margin: 0 auto;
+  bottom: 0px;
+  text-align: center;
+  background-color: white;
+  position: fixed;
+  z-index: 4588;
+  position: absolute;
+  border: solid black 1px; }
 
 #Clear {
   position: relative;

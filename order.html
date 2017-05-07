@@ -17,12 +17,7 @@
 
 
 <body>
-<div id="comfirmation">
-<h2>Are you sure you want to send order?</h2>
-	<div class="btn">No</div>
-	<div class="btn">Yes</div>
-	
-</div>
+
 
 
 <div id="nav">
@@ -30,6 +25,13 @@
 		<img src="https://uc.uxpin.com/files/628104/622621/logo-24.png" alt="the logo">
 		<p> (<span class="cartCount"></span>)</p> 
 	</div>		
+</div>
+
+<div class="comfirmation">
+<h2>Are you sure you want to send order?</h2>
+	<div class="btn">Yes</div>
+	<div class="btn close">No</div>
+	
 </div>
 
  <div id="order_sections">
@@ -63,12 +65,12 @@
 	</div>
 
 	
-	
+	<!-- <div class="show"></div> -->
 	
 	<button id="Clear">Clear Cart</button>
 
-	<div class="send_order">
-		 <button type="button" class="btn btn-success show">SEND ORDER</button>
+	<div class="show send_order">
+		 <button type="button" class="btn btn-success">SEND ORDER</button>
 	</div>
 	
 
@@ -83,5 +85,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/CartFunction.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

@@ -280,7 +280,7 @@ text-align: left;
 		background-color: green;
 	}*/
 
-	#close{
+	.close{
 		width: 30px;
 		height: 30px;
 		/*background-color: blue;*/
@@ -574,7 +574,7 @@ select{
 
 /*Start of order page*/
 
-#comfirmation{
+.comfirmation{
 
 	height: 100%;
 	width: 100%;
@@ -582,7 +582,7 @@ select{
 	z-index: 1000;
 	text-align: center;
 
-	/*display: none;*/
+	display: none;
 
 	.btn{
 		position: relative;
@@ -728,6 +728,21 @@ font-family: 'Dosis', sans-serif;
 
 	}
 }
+
+.show{
+	height: 10vh;
+	width: 100%;
+	margin: 0 auto;
+	bottom: 0px;
+	text-align: center;
+	background-color: white;
+	position: fixed;
+	z-index: 4588;
+	position: absolute;
+	border: solid black 1px;
+
+}
+
 
 #Clear{
 	position: relative;
