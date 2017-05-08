@@ -14,13 +14,38 @@ html, body {
   width: 100vw;
   max-width: 100vw; }
 
+#Cart button {
+  height: 35px;
+  width: 30px;
+  color: black;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  border: 1px black solid;
+  border-radius: 10px;
+  margin-left: 10px;
+  font-family: "Dosis", sans-serif; }
+#Cart button:active {
+  background-color: #ffe6e6; }
+
 #nav {
   background-color: #f5c013;
   height: 10%; }
-  #nav p {
-    /*float: right;*/
-    margin-right: 5px;
-    text-align: right; }
+
+.cart_icon {
+  position: absolute;
+  font-size: 1em;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: solid black 1px;
+  float: right;
+  margin-right: 10px;
+  text-align: center;
+  margin-top: 25px;
+  left: 90%;
+  background-color: #f39c12;
+  display: inline-block; }
 
 .logo img {
   width: 30vh;
@@ -137,12 +162,11 @@ html, body {
   height: 100%;
   display: block;
   position: relative;
-  background-image: url(../assets/sd.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
-  border-bottom: black solid 1px;
-  border-top: solid white 1px; }
+  border-top: solid white 1px;
+  background-image: url(../assets/sd.png); }
 
 /*start of sweets page css*/
 /*#Cart{
@@ -250,51 +274,33 @@ text-align: left;
   height: 100%;
   display: block;
   position: relative;
-  background-image: url(../assets/cookie.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
-  border-bottom: black solid 1px;
   border-top: solid white 1px;
-  /*background: linear-gradient rgba(0,0,0,0.5) , rgba(0,0,0,0.5), url(../assets/cookie.png);*/
-  /*:after{
-  content: "";
-    background-image: url(../assets/cookie.jpg);
-    opacity: 0.5;
-    position: absolute;
-    z-index: -1; 
-  }*/ }
+  background-image: url(../assets/cookie.png); }
 
-/*.content-container{
-	position: relative;
-	width: 90%;
-	height: 90%;
-	background-color: white;
-	margin: 0 auto;
-	top: 5%;
-	opacity: 0.5;
-}*/
 .carrotcake {
   background-color: white;
   height: 100%;
   display: block;
   position: relative;
-  background-image: url(../assets/carrotcake.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
-  border-bottom: black solid 1px; }
+  border-top: solid white 1px;
+  background-image: url(../assets/carrotcake.png); }
 
 .brownie {
   background-color: white;
   height: 100%;
   display: block;
   position: relative;
-  background-image: url(../assets/brownie.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
-  border-bottom: black solid 1px; }
+  border-top: solid white 1px;
+  background-image: url(../assets/brownie.png); }
 
 .content1 {
   position: relative;
@@ -305,7 +311,8 @@ text-align: left;
   transform: translateY(-30%); }
   .content1 h1 img {
     height: 20px;
-    width: 20px; }
+    width: 20px;
+    /*background-color: white;*/ }
   .content1 h3 {
     font-size: 4rem;
     margin-top: 30px;
@@ -431,7 +438,7 @@ select {
   width: 100%;
   /*margin-top: 10%;*/ }
   .order_box .btn {
-    margin-top: 50%; }
+    margin-top: 43%; }
 
 .btn-primary {
   float: right;
@@ -504,16 +511,16 @@ select {
     font-size: 2em; }
 
 .show {
-  height: 10vh;
+  height: 0.1vh;
   width: 100%;
   margin: 0 auto;
-  bottom: 0px;
+  bottom: 60px;
   text-align: center;
   background-color: white;
   position: fixed;
   z-index: 4588;
   position: absolute;
-  border: solid black 1px; }
+  /*	border: solid black 1px;*/ }
 
 #Clear {
   position: relative;
@@ -589,7 +596,18 @@ select {
     border: solid white 1px; }
 
   .carrotcake {
-    border: solid white 1px; } }
+    border: solid white 1px; }
+
+  .order_box .btn {
+    height: 80px;
+    width: 160px; }
+
+  .send_order {
+    height: 150px;
+    bottom: 100px;
+    font-size: 2.5em; }
+    .send_order button {
+      height: 130px; } }
 /*Tablet Landscape*/
 @media screen and (min-width: 1024px) {
   .items {
@@ -604,4 +622,9 @@ select {
     border: solid white 1px; }
 
   .carrotcake {
-    border: solid white 1px; } }
+    border: solid white 1px; }
+
+  .order_box .btn {
+    margin-top: 22%; } }
+
+/*# sourceMappingURL=style.css.map */

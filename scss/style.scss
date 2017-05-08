@@ -4,6 +4,15 @@ $primary-color: #f5c013;
 $amatic-font: 'Amatic SC', cursive;
 $dosis-font: 'Dosis', sans-serif;
 $screen: 100%;
+$background-color: white;
+$block-height: 100%;
+$display: block;
+$position: relative;
+$background-repeat: no-repeat;
+$background-size: cover;
+$background-position: center bottom;
+$border: solid white 1px;
+
 
 /* SASS Mixins*/
 @mixin screen-wh {
@@ -13,12 +22,23 @@ $screen: 100%;
  }
 
 
+ @mixin content-format {
+  	background-color: $background-color;
+  	height: 100%;
+	display: block;
+  	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	border-top: solid white 1px;
+ }
+
+
 
 *{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-
 }
 
 .center{
@@ -33,15 +53,50 @@ html,body{
 }
 
 
+#Cart{
+	button{
+
+		height: 35px;
+		width: 30px;
+		color: black;
+		margin: 0 auto;
+		text-align: center;
+		background-color: white;
+		border: 1px black solid;
+		border-radius: 10px;
+		margin-left: 10px;
+		font-family: $dosis-font;
+	}
+
+
+	button:active{
+		
+			background-color:  #ffe6e6;
+	}
+
+}
+
 #nav{
 	background-color: $primary-color;
 	height: 10%;
+}
 
-	p{
-		/*float: right;*/
-		margin-right: 5px;
-		text-align: right;
-	}
+
+.cart_icon{
+
+	position: absolute;
+	font-size: 1em;	
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	border: solid black 1px;
+	float: right;
+	margin-right: 10px;
+	text-align: center;
+	margin-top: 25px;
+	left: 90%;
+	background-color: #f39c12;
+	display: inline-block; 
 }
 
 .logo {
@@ -207,17 +262,8 @@ html,body{
 /*start of bread page*/
 
 .sourdough{
-background-color: white;
-	height: 100%;
-	display: block;
-  	position: relative;
-	background-image: url(../assets/sd.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center bottom;
-	border-bottom: black solid 1px;
-	border-top: solid white 1px;
-
+	@include content-format;
+	background-image: url(../assets/sd.png)
 }
 
 
@@ -349,61 +395,25 @@ text-align: left;
 
 
 .cookie{
-	background-color: white;
-	height: 100%;
-	display: block;
-  	position: relative;
+	@include content-format;
 	background-image: url(../assets/cookie.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center bottom;
-	border-bottom: black solid 1px;
-	border-top: solid white 1px;
-	/*background: linear-gradient rgba(0,0,0,0.5) , rgba(0,0,0,0.5), url(../assets/cookie.png);*/
 	
-	
-	/*:after{
-	content: "";
-	  background-image: url(../assets/cookie.jpg);
-	  opacity: 0.5;
-	  position: absolute;
-	  z-index: -1; 
-	}*/
-
 }
 
-/*.content-container{
-	position: relative;
-	width: 90%;
-	height: 90%;
-	background-color: white;
-	margin: 0 auto;
-	top: 5%;
-	opacity: 0.5;
-}*/
-
 .carrotcake{
-	background-color: white;
-	height: 100%;
-	display: block;
-  	position: relative;
+	@include content-format;
 	background-image: url(../assets/carrotcake.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center bottom;
-	border-bottom: black solid 1px;
 }
 
 .brownie{
-	background-color: white;
-	height: 100%;
-	display: block;
-  	position: relative;
+	@include content-format;
 	background-image: url(../assets/brownie.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center bottom;
-	border-bottom: black solid 1px;
+
+		button{
+
+
+		}
+
 }
 .content1{
 	 position: relative;
@@ -417,6 +427,7 @@ text-align: left;
 		img{
 			height: 20px;
 			width: 20px;
+			/*background-color: white;*/
 		}
 	}
 
@@ -572,6 +583,7 @@ select{
 }
 
 
+
 /*Start of order page*/
 
 .comfirmation{
@@ -614,7 +626,7 @@ select{
 	width: 100%;
 	/*margin-top: 10%;*/
 	.btn{
-		margin-top: 50%;
+		margin-top: 43%;
 	}
 
 }
@@ -730,16 +742,16 @@ font-family: 'Dosis', sans-serif;
 }
 
 .show{
-	height: 10vh;
+	height: 0.1vh;
 	width: 100%;
 	margin: 0 auto;
-	bottom: 0px;
+	bottom: 60px;
 	text-align: center;
 	background-color: white;
 	position: fixed;
 	z-index: 4588;
 	position: absolute;
-	border: solid black 1px;
+/*	border: solid black 1px;*/
 
 }
 
@@ -854,6 +866,31 @@ font-family: 'Dosis', sans-serif;
 
 		border: solid white 1px;
 	}
+
+
+	.order_box{
+	
+		.btn{
+			height: 80px;
+			width: 160px;
+		}
+
+	}
+
+	.send_order{
+
+		
+
+			height: 150px;
+			bottom: 100px;
+			font-size: 2.5em;
+			button{
+
+				height: 130px;
+			}
+		
+	}
+
 }
 
 /*Tablet Landscape*/
@@ -880,6 +917,8 @@ font-family: 'Dosis', sans-serif;
 		border: solid white 1px;
 	}
 
-
+	.order_box .btn{
+		margin-top: 22%
+	}
 
 }
