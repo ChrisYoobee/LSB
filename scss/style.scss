@@ -97,6 +97,9 @@ html,body{
 	left: 90%;
 	background-color: #f39c12;
 	display: inline-block; 
+	p{
+		font-family: $dosis-font;
+	}
 }
 
 .logo {
@@ -280,7 +283,7 @@ text-align: left;
 
 .Remove{
 	display: inline-block;
-	float: left;
+	
 }
 
 
@@ -326,17 +329,7 @@ text-align: left;
 		background-color: green;
 	}*/
 
-	.close{
-		width: 30px;
-		height: 30px;
-		/*background-color: blue;*/
-		color: black;
-		float: right;
-		border: 1px solid black;
-		/*border-radius: 20px;*/
-		margin-top: 20px;
-		margin-right: 20px;
-	}
+	
 
 
 	#add_item{
@@ -423,13 +416,15 @@ text-align: left;
   	 color: black;
   	 transform: translateY(-30%);
 
-	h1{
-		img{
-			height: 20px;
-			width: 20px;
-			/*background-color: white;*/
-		}
+	p{
+	
 	}
+
+	img{
+			height: 30px;
+			width: 30px;
+			margin-top: 7px;
+		}
 
 	h3{
 		font-size: 4rem;
@@ -600,18 +595,40 @@ select{
 		position: relative;
 		width: 80px;
 		height: 50px;
-		border: solid black 1px;
-	
-		margin-top: 50%;
+		border: solid #aaaaaa 3px;
+		display: inline-block;
+		margin-top: 20px;
+		background-color: #edc440;
+		font-size: 1.5em;
+		color: white;
+
+
 		
 
 	}
 
 	h2{
 		font-family: $dosis-font;
+		margin-top: 50%;
 	}
 
 }
+
+.close{
+		/*width: 30px;
+		height: 30px;
+		color: black;
+		float: right;
+		border: 1px solid black;
+		margin-top: 20px;
+		margin-right: 20px;*/
+		line-height: 30px;
+		text-shadow: none;
+		font-weight: normal;
+		margin-left: 20%;
+		float: left;
+		opacity: 1;
+	}
 
 
 
@@ -899,6 +916,26 @@ font-family: 'Dosis', sans-serif;
 			}
 		
 	}
+
+	.cart_icon{
+
+	position: absolute;
+	font-size: 2em;	
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+	border: solid black 1px;
+	float: right;
+	margin-right: 10px;
+	text-align: center;
+	margin-top: 25px;
+	left: 90%;
+	background-color: #f39c12;
+	display: inline-block; 
+	p{
+		font-family: $dosis-font;
+	}
+}
 
 }
 

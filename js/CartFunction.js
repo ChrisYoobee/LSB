@@ -12,7 +12,18 @@ $(document).ready(function(){
 		for(var i=0; i<storedItems.length;i++){
 			var item = storedItems[i];
 			var ClassName = item['product'].replace(/\s/g, '');
-			$("#Cart").append("<li class='"+ ClassName + "'>"+ item['product'] + " x" + item['quantity'] + " ($" +  item['price'] + ") <button>-</button><button>+</button></li>");
+			// $("#Cart").append("<li class='"+ ClassName + "'>"+ item['product'] + " x" + item['quantity'] + " ($" +  item['price'] + ") <button>-</button><button>+</button></li>");
+
+			$("#Cart").append("<li class='"+ ClassName + "'>"+
+								"<span class='product_title'>" + item['product'] + "</span>"+
+									" x <span class='quantity'>" + item['quantity'] + "</span>"+
+									" $<span class='product_price'>" + item['price'] + "</span>"+
+									"<button class='Remove'> - </button> "+
+									"<button class='Add'> + </button> "+
+									"<span class='original_price_hidden' style='display: none;'>"+ item['SinglePrice']+"</span>"+
+								"<li>"
+				);
+
 			cart.push(item);
 		}
 	}
@@ -36,11 +47,14 @@ console.log(cart);
 //If there isn't then it will create a new entry
 //If there is it will add the new quantity
 $(document).on('click', '.Add', function(e) {
+	// event.preventDefault();
 	var value = $(this).parent().find('.product_title').text();
 	var price = parseFloat($(this).parent().find('.product_price').text()).toFixed(2);
+	var SinglePrice = price;
 	var quantity = 1;
 	var CartItemFound = false;
 	var fullprice = parseFloat(price * quantity).toFixed(2);
+
 	if(cart.length !== 0){
 		for(var i=0; i<cart.length; i++){
 			if(cart[i]['product'] === value){
@@ -56,14 +70,16 @@ $(document).on('click', '.Add', function(e) {
 		//There is an exsisting entry in the array
 		for(var i=0; i<cart.length; i++){
 			if(cart[i]['product'] === value){
+				var SinglePrice = Number(cart[i]['SinglePrice']);;
 				var OldQuant = Number(cart[i]['quantity']);
 				var OldPrice = parseFloat(cart[i]['price']).toFixed(2);
 				var NewQuant = parseInt(OldQuant) + quantity;
-				var NewPrice = Number(OldPrice) + Number(fullprice);
+				var NewPrice = Number(OldPrice) + Number(SinglePrice);
 				var NewPrice = parseFloat(NewPrice).toFixed(2);
 				cart[i]['price'] = NewPrice;
 				cart[i]['quantity'] = NewQuant;
-				$('li.' + ClassName).text(value + " - " + NewQuant + " ($" + NewPrice + ")");
+				$('li.' + ClassName + ' span.quantity').text(NewQuant);
+				$('li.' + ClassName + ' span.product_price').text(NewPrice);
 				break;
 			}
 		};
@@ -73,11 +89,22 @@ $(document).on('click', '.Add', function(e) {
 		cart.push({
 			"product" : value ,
 			"quantity" : quantity,
-			"price" : fullprice
+			"price" : fullprice,
+			"SinglePrice" : SinglePrice
 		});
 		localStorage.setItem("items", JSON.stringify(cart));
 		$(".empty").remove();
-		$("#Cart").append("<li class='"+ ClassName + "'>"+ value + " x" + quantity + " ($" + fullprice +   ")</li>");			
+		// $("#Cart").append("<li class='"+ ClassName + "'>"+ value + " x" + quantity + " ($" + fullprice +   ")</li>");
+
+		$("#Cart").append("<li class='"+ ClassName + "'>"+
+							"<span class='product_title'>" + value + "</span>"+
+								" x <span class='quantity'>" + quantity + "</span>"+
+								" $<span class='product_price'>" + fullprice + "</span>"+
+								"<button class='Remove'> - </button> "+
+								"<button class='Add'> + </button> "+
+								"<span class='original_price_hidden' style='display: none;'>"+ SinglePrice +"</span>"+
+							"<li>"
+			);				
 	}
 	console.log(cart);
 	CartCount();
@@ -88,6 +115,7 @@ $(document).on('click', '.Add', function(e) {
 $(document).on('click', '.Remove', function(e) {
 	var value = $(this).parent().find('.product_title').text();	
 	var price = parseFloat($(this).parent().find('.product_price').text()).toFixed(2);
+	var SinglePrice = parseFloat($(this).parent().find('.original_price_hidden').text()).toFixed(2);;
 	var quantity = 1;
 	var CartItemFound = false;
 
@@ -107,12 +135,13 @@ $(document).on('click', '.Remove', function(e) {
 				var NewQuant = parseInt(cart[i]['quantity']) - quantity;
 				var ClassName = cart[i]['product'].replace(/\s/g, '');
 				var OldPrice = parseFloat(cart[i]['price']).toFixed(2);
-				var NewPrice = Number(OldPrice) - Number(price);
+				var NewPrice = Number(OldPrice) - Number(SinglePrice);
 				var NewPrice = parseFloat(NewPrice).toFixed(2);
 				if(NewQuant > 0){
 					cart[i]['quantity'] = NewQuant;
 					cart[i]['price'] = NewPrice;
-					$('li.' + ClassName).text(value + " x" + NewQuant + " ($" + NewPrice + ")");
+					$('li.' + ClassName + ' span.quantity').text(NewQuant);
+					$('li.' + ClassName + ' span.product_price').text(NewPrice);
 				} else {
 					cart.splice(i, 1);
 					$('li.' + ClassName).remove();

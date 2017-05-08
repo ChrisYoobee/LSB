@@ -46,6 +46,8 @@ html, body {
   left: 90%;
   background-color: #f39c12;
   display: inline-block; }
+  .cart_icon p {
+    font-family: "Dosis", sans-serif; }
 
 .logo img {
   width: 30vh;
@@ -177,8 +179,7 @@ text-align: left;
   /*float: left;*/ }
 
 .Remove {
-  display: inline-block;
-  float: left; }
+  display: inline-block; }
 
 .box {
   width: 100%;
@@ -212,17 +213,6 @@ text-align: left;
 		height: 60px;
 		background-color: green;
 	}*/
-.close {
-  width: 30px;
-  height: 30px;
-  /*background-color: blue;*/
-  color: black;
-  float: right;
-  border: 1px solid black;
-  /*border-radius: 20px;*/
-  margin-top: 20px;
-  margin-right: 20px; }
-
 #add_item {
   width: 100px;
   height: 60px;
@@ -309,10 +299,10 @@ text-align: left;
   /*float: right;*/
   color: black;
   transform: translateY(-30%); }
-  .content1 h1 img {
-    height: 20px;
-    width: 20px;
-    /*background-color: white;*/ }
+  .content1 img {
+    height: 30px;
+    width: 30px;
+    margin-top: 7px; }
   .content1 h3 {
     font-size: 4rem;
     margin-top: 30px;
@@ -423,10 +413,30 @@ select {
     position: relative;
     width: 80px;
     height: 50px;
-    border: solid black 1px;
-    margin-top: 50%; }
+    border: solid #aaaaaa 3px;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #edc440;
+    font-size: 1.5em;
+    color: white; }
   .comfirmation h2 {
-    font-family: "Dosis", sans-serif; }
+    font-family: "Dosis", sans-serif;
+    margin-top: 50%; }
+
+.close {
+  /*width: 30px;
+  height: 30px;
+  color: black;
+  float: right;
+  border: 1px solid black;
+  margin-top: 20px;
+  margin-right: 20px;*/
+  line-height: 30px;
+  text-shadow: none;
+  font-weight: normal;
+  margin-left: 20%;
+  float: left;
+  opacity: 1; }
 
 #order_sections {
   background-color: white;
@@ -609,7 +619,24 @@ select {
     bottom: 100px;
     font-size: 2.5em; }
     .send_order button {
-      height: 130px; } }
+      height: 130px; }
+
+  .cart_icon {
+    position: absolute;
+    font-size: 2em;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: solid black 1px;
+    float: right;
+    margin-right: 10px;
+    text-align: center;
+    margin-top: 25px;
+    left: 90%;
+    background-color: #f39c12;
+    display: inline-block; }
+    .cart_icon p {
+      font-family: "Dosis", sans-serif; } }
 /*Tablet Landscape*/
 @media screen and (min-width: 1024px) {
   .items {
@@ -628,5 +655,3 @@ select {
 
   .order_box .btn {
     margin-top: 22%; } }
-
-/*# sourceMappingURL=style.css.map */
