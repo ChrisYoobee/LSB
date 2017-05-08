@@ -607,6 +607,10 @@ select{
 
 	}
 
+	h2{
+		font-family: $dosis-font;
+	}
+
 }
 
 
@@ -780,6 +784,11 @@ font-family: 'Dosis', sans-serif;
     transition: all 0.8s
 }
 
+
+#cimfirmation{
+
+
+}
 
 @media screen and (min-width:376px) and (max-width:599px) {
 	.column{ 

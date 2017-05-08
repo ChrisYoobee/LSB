@@ -425,6 +425,8 @@ select {
     height: 50px;
     border: solid black 1px;
     margin-top: 50%; }
+  .comfirmation h2 {
+    font-family: "Dosis", sans-serif; }
 
 #order_sections {
   background-color: white;
