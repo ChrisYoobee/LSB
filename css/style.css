@@ -161,7 +161,6 @@ html, body {
 
 /*start of bread page*/
 .sourdough {
-  background-color: white;
   height: 100%;
   display: block;
   position: relative;
@@ -172,7 +171,6 @@ html, body {
   background-image: url(../assets/sd.png); }
 
 .focaccia {
-  background-color: white;
   height: 100%;
   display: block;
   position: relative;
@@ -183,7 +181,6 @@ html, body {
   background-image: url(../assets/focaccia.png); }
 
 .brioche {
-  background-color: white;
   height: 100%;
   display: block;
   position: relative;
@@ -280,7 +277,6 @@ html, body {
   height: 50px; }
 
 .cookie {
-  background-color: white;
   height: 100%;
   display: block;
   position: relative;
@@ -291,7 +287,6 @@ html, body {
   background-image: url(../assets/cookie.png); }
 
 .carrotcake {
-  background-color: white;
   height: 100%;
   display: block;
   position: relative;
@@ -302,7 +297,6 @@ html, body {
   background-image: url(../assets/carrotcake.png); }
 
 .brownie {
-  background-color: white;
   height: 100%;
   display: block;
   position: relative;
@@ -339,7 +333,6 @@ html, body {
   .content1 h5 {
     font-family: 'Dosis', sans-serif;
     font-size: 2em;
-    padding: none;
     margin: 0; }
 
 .sweets_header a {
@@ -423,7 +416,6 @@ select {
 
 /*Start of Coffee Page*/
 .flatWhite {
-  background-color: white;
   height: 100%;
   display: block;
   position: relative;
@@ -434,7 +426,6 @@ select {
   background-image: url(../assets/flat_white.png); }
 
 .longBlack {
-  background-color: white;
   height: 100%;
   display: block;
   position: relative;
@@ -445,7 +436,6 @@ select {
   background-image: url(../assets/longblack.png); }
 
 .icedCoffee {
-  background-color: white;
   height: 100%;
   display: block;
   position: relative;
@@ -457,7 +447,6 @@ select {
 
 /*Start of Cabinet page*/
 .blt {
-  background-color: white;
   height: 100%;
   display: block;
   position: relative;
@@ -468,7 +457,6 @@ select {
   background-image: url(../assets/blt.png); }
 
 .panini {
-  background-color: white;
   height: 100%;
   display: block;
   position: relative;
@@ -479,7 +467,6 @@ select {
   background-image: url(../assets/panini.png); }
 
 .ham {
-  background-color: white;
   height: 100%;
   display: block;
   position: relative;

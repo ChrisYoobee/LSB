@@ -23,7 +23,7 @@ $border: solid white 1px;
 
 
  @mixin content-format {
-  	background-color: $background-color;
+  
   	height: 100%;
 	display: block;
   	position: relative;
@@ -457,7 +457,6 @@ html,body{
 	h5{
 		font-family: 'Dosis', sans-serif;
 		font-size: 2em;
-		padding: none;
 		margin: 0;
 	}
 	
