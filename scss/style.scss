@@ -30,7 +30,7 @@ $border: solid white 1px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center bottom;
-	border-top: solid white 1px;
+	border: solid white 1px;
  }
 
 
@@ -79,6 +79,7 @@ html,body{
 #nav{
 	background-color: $primary-color;
 	height: 10%;
+	width: 100%;
 }
 
 
@@ -269,12 +270,22 @@ html,body{
 	background-image: url(../assets/sd.png)
 }
 
+.focaccia{
+@include content-format;
+	background-image: url(../assets/focaccia.png)
+
+}
+
+.brioche{
+
+	@include content-format;
+	background-image: url(../assets/brioche.png)
+}
+
 
 /*start of sweets page css*/
 
-/*#Cart{
-text-align: left;
-}*/
+
 
 .Add{
 	display: inline-block;
@@ -358,8 +369,8 @@ text-align: left;
 		height: 50px;
 		text-align: center;
 		margin: 0 auto;
-		border-radius: 10px;
-		border: #286090 3px solid;
+		border-radius: 2px;
+		border: #3A3A3A 3px solid;
 		margin-top: 20px;
 	}
 
@@ -436,7 +447,7 @@ text-align: left;
 		position: relative;
 		top: 50%;
 		text-decoration: none;
-		font-weight: normal;
+		font-weight: bold;
 	}
 
 	h4{
@@ -577,6 +588,39 @@ select{
 	transform: translateX(-15px);
 }
 
+
+/*Start of Coffee Page*/
+.flatWhite{
+	@include content-format;
+	background-image: url(../assets/flat_white.png);
+}
+
+.longBlack{
+	@include content-format;
+	background-image: url(../assets/longblack.png);
+}
+
+.icedCoffee{
+	@include content-format;
+	background-image: url(../assets/icedcoffee.png);
+}
+
+/*Start of Cabinet page*/
+
+.blt{
+	@include content-format;
+	background-image: url(../assets/blt.png);
+}
+
+.panini{
+	@include content-format;
+	background-image: url(../assets/panini.png);
+}
+
+.ham{
+	@include content-format;
+	background-image: url(../assets/ham.png);
+}
 
 
 /*Start of order page*/
@@ -795,19 +839,45 @@ font-family: 'Dosis', sans-serif;
 
 /*Order Complete Page*/
 
+#oc_sections{
+
+	height: 90%;
+	background-color: white;
+	margin: 0 auto;
+	text-align: center;
+
+	.btn{
+		background-color: #2980b9;
+		color: white;
+		margin-top: 50px;
+	}
+}
+
 .done{
 	position: relative;
 	width: 100%;
-	height: 90%;
-	
-		h2{
-			float: left;
-			position: relative;
-			font-family: $dosis-font;
-			margin: 0 auto;
+	height: 20%;
+	float: left;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 90px;
+	font-family: $dosis-font;
+	margin-top: 38%;
 
-		}
-}
+	}
+
+	#clockdiv{
+		font-family: $dosis-font;
+		font-size: 2em;
+		font-weight: bold;
+		color: #27ae60;
+
+	}
+
+
+
+
 
 /*--------------Start of Break Points--------------------
 						-
@@ -956,6 +1026,35 @@ font-family: 'Dosis', sans-serif;
 	}
 
 
+	/*#oc_sections{
+
+	height: 90%;
+	background-color: white;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 3em;
+
+}*/
+
+
+.done{
+	margin-top: 35%;
+	font-size: 3em;
+
+	h2{
+		font-size: 2em;
+	}
+
+
+	}
+
+	#clockdiv{
+	
+		font-size: 3.5em;
+
+	}
+
+
 }
 
 /*Tablet Landscape*/
@@ -1009,6 +1108,22 @@ font-family: 'Dosis', sans-serif;
 		line-height: 80px;
 
 		}
+
+	}
+
+	.done{
+	margin-top: 15%;
+	font-size: 2em;
+	h2{
+		font-size: 2em;
+	}
+
+
+	}
+
+	#clockdiv{
+	
+		font-size: 3.5em;
 
 	}
 
