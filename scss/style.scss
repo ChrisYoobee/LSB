@@ -632,7 +632,6 @@ select{
 	background-color: white;
 	z-index: 1000;
 	text-align: center;
-
 	display: none;
 
 	.btn{
@@ -646,11 +645,16 @@ select{
 		font-size: 1.5em;
 		color: white;
 
+
 	}
 
 	h2{
 		font-family: $dosis-font;
 		margin-top: 50%;
+	}
+
+	a{
+		color: white;
 	}
 
 }

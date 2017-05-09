@@ -510,6 +510,8 @@ select {
   .comfirmation h2 {
     font-family: "Dosis", sans-serif;
     margin-top: 50%; }
+  .comfirmation a {
+    color: white; }
 
 .close {
   line-height: 30px;
