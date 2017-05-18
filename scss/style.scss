@@ -98,9 +98,13 @@ html,body{
 	left: 90%;
 	background-color: #f39c12;
 	display: inline-block; 
+	z-index: 20;
 	p{
 		font-family: $dosis-font;
 	}
+}
+.cartCount{
+	color: white;
 }
 
 .logo {
@@ -401,6 +405,7 @@ html,body{
 .cookie{
 	@include content-format;
 	background-image: url(../assets/cookie.png);
+
 	
 }
 
@@ -916,6 +921,7 @@ font-family: 'Dosis', sans-serif;
 @media screen and (min-width:600px) and (max-width: 1023px) {
 	.content1{
 		transform: translateY(0%);
+		position: initial;
 	}
 
 	.column{ 
@@ -928,9 +934,9 @@ font-family: 'Dosis', sans-serif;
 
 	.back{
 		img{
-			height: 60px;
-			width: 60px;
-			margin-top: 22px;
+			height: 40px;
+			width: 40px;
+			margin-top: 15px;
 			margin-left: 15px;
 			}
 
@@ -951,7 +957,7 @@ font-family: 'Dosis', sans-serif;
 	position: relative;
 	transform: translateY(50%);
 	display: inline-block;
-	font-size: 7vw;
+	font-size: 40px;
 
 	}
 
@@ -970,6 +976,7 @@ font-family: 'Dosis', sans-serif;
 	}
 	.cookie{
 		border: solid white 1px;
+
 	}
 
 	.carrotcake{
@@ -1005,6 +1012,7 @@ font-family: 'Dosis', sans-serif;
 	font-size: 2em;	
 	width: 40px;
 	height: 40px;
+	border-radius: 50px;
 	}
 
 
@@ -1027,17 +1035,6 @@ font-family: 'Dosis', sans-serif;
 		}
 
 	}
-
-
-	/*#oc_sections{
-
-	height: 90%;
-	background-color: white;
-	margin: 0 auto;
-	text-align: center;
-	font-size: 3em;
-
-}*/
 
 
 .done{
@@ -1091,6 +1088,7 @@ font-family: 'Dosis', sans-serif;
 	font-size: 2em;	
 	width: 40px;
 	height: 40px;
+	border-radius: 50px;
 	}
 
 	.comfirmation{

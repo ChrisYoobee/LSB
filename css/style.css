@@ -46,9 +46,13 @@ html, body {
   margin-top: 25px;
   left: 90%;
   background-color: #f39c12;
-  display: inline-block; }
+  display: inline-block;
+  z-index: 20; }
   .cart_icon p {
     font-family: "Dosis", sans-serif; }
+
+.cartCount {
+  color: white; }
 
 .logo img {
   width: 30vh;
@@ -677,7 +681,8 @@ select {
 /*Tablet portrait*/
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .content1 {
-    transform: translateY(0%); }
+    transform: translateY(0%);
+    position: initial; }
 
   .column {
     height: 100%;
@@ -685,9 +690,9 @@ select {
     float: left; }
 
   .back img {
-    height: 60px;
-    width: 60px;
-    margin-top: 22px;
+    height: 40px;
+    width: 40px;
+    margin-top: 15px;
     margin-left: 15px; }
 
   .sweets_header a {
@@ -701,7 +706,7 @@ select {
     position: relative;
     transform: translateY(50%);
     display: inline-block;
-    font-size: 7vw; }
+    font-size: 40px; }
 
   .items {
     float: left;
@@ -731,7 +736,8 @@ select {
   .cart_icon {
     font-size: 2em;
     width: 40px;
-    height: 40px; }
+    height: 40px;
+    border-radius: 50px; }
 
   .comfirmation h2 {
     font-size: 3em; }
@@ -742,15 +748,6 @@ select {
     font-size: 3em;
     line-height: 80px; }
 
-  	/*#oc_sections{
-  
-  	height: 90%;
-  	background-color: white;
-  	margin: 0 auto;
-  	text-align: center;
-  	font-size: 3em;
-  
-  }*/
   .done {
     margin-top: 35%;
     font-size: 3em; }
@@ -781,7 +778,8 @@ select {
   .cart_icon {
     font-size: 2em;
     width: 40px;
-    height: 40px; }
+    height: 40px;
+    border-radius: 50px; }
 
   .comfirmation h2 {
     font-size: 3em;
